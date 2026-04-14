@@ -15,7 +15,13 @@ await connectDb()
 await connectCloudiary()
 
 app.use(cors())
-app.use(clerkMiddleware())
+
+const clerkHandler = process.env.CLERK_SECRET_KEY && process.env.CLERK_PUBLISHABLE_KEY ? clerkMiddleware() : (req, res, next) => {
+    console.warn('Clerk is not configured. Skipping Clerk middleware.')
+    next()
+}
+
+app.use(clerkHandler)
 
 app.get('/', (req, res) => {
     res.send("API Working")
