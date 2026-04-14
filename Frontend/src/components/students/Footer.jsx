@@ -7,9 +7,9 @@ function Footer() {
         <div className='flex flex-col md:items-start items-center w-full'>
           <div className='flex gap-3 items-center mt-0'>
             <img className='w-[2rem] h-[2rem] ' src="/favicon.png" alt="logo" />
-            <h1 className= 'text-[2rem] text-green-700 font-bold'>NovaLMS</h1>
+            <h1 className= 'text-[2rem] text-green-700 font-bold'>CourseForge</h1>
           </div>
-          <p className='mt-6 text-center md:text-left text-xs text-white/80'>Nova LMS empowers learners with expert-led courses, flexible learning, and real-world skills. Learn anytime, anywhere!</p>
+          <p className='mt-6 text-center md:text-left text-xs text-white/80'>CourseForge empowers learners with expert-led courses, flexible learning, and real-world skills. Learn anytime, anywhere.</p>
         </div>
         <div className='flex flex-col md:items-start items-center w-full'>
           <h2 className='font-semibold text-white mb-5'>Company</h2>

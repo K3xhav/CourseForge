@@ -1,6 +1,12 @@
 # CourseForge
 
-CourseForge is a full-stack Learning Management System designed for mentors and students. It includes course creation, lecture management, student enrollment, payment processing, and progress tracking.
+CourseForge is a full-stack Learning Management System built with React, Vite, Node.js, Express, MongoDB, Clerk, Stripe, and Cloudinary. It supports mentors and students, course creation, enrollment, payment processing, and progress tracking.
+
+## Live links
+
+- GitHub repository: https://github.com/K3xhav/CourseForge
+- Frontend site: https://courseforge-frontend.vercel.app
+- Backend API root: https://courseforge-backend.vercel.app
 
 ## Overview
 
@@ -9,7 +15,7 @@ This repository contains two main components:
 - `Backend/` — Express.js API server with MongoDB integration
 - `Frontend/` — React application built with Vite
 
-The application supports authenticated access for mentors and students, organized course content, payment handling, and course progress monitoring.
+The app supports authenticated access for mentors and students, structured course content, and payment-enabled enrollments.
 
 ## Features
 
@@ -67,9 +73,9 @@ The application supports authenticated access for mentors and students, organize
    - `STRIPE_SECRET_KEY`
    - `CLERK_SECRET_KEY`
    - `CLERK_PUBLISHABLE_KEY`
-   - `CLOUDINARY_CLOUD_NAME`
+   - `CLOUDINARY_NAME`
    - `CLOUDINARY_API_KEY`
-   - `CLOUDINARY_API_SECRET`
+   - `CLOUDINARY_SECRET_KEY`
 
 4. Start the backend server:
    ```bash
@@ -99,21 +105,9 @@ The application supports authenticated access for mentors and students, organize
    npm run dev
    ```
 
-## Deployment
+## Vercel deployment
 
-This project can be deployed to Vercel as two separate projects:
-
-- `Backend/` for the API server
-- `Frontend/` for the React application
-
-To deploy with Vercel, install the CLI and log in to your Vercel account:
-
-```bash
-npm install -g vercel
-vercel login
-```
-
-Then deploy each folder individually:
+Deploy the backend and frontend separately:
 
 ```bash
 cd Backend
@@ -125,14 +119,14 @@ cd ../Frontend
 vercel --prod
 ```
 
-If you deploy to Vercel, configure the same environment variables in your Vercel project settings.
+Set the same environment variables in each Vercel project for full runtime functionality.
 
 ## Notes
 
-- Confirm that the backend server is running before using the frontend.
-- Update the environment variables to match your configured services.
-- This repository is maintained personally and is now owned and managed by me.
+- The frontend site is live and accessible at the public Vercel URL above.
+- The backend API is also deployed; it requires valid environment variables on Vercel to operate fully.
+- This repository is owned and maintained by K3xhav.
 
 ## Contribution
 
-The repository is intended for active development and improvement. Any updates should follow the current project structure and configuration patterns used in the codebase.
+This codebase is managed by the project owner and may be updated to improve functionality, reliability, and deployment configuration.

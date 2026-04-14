@@ -44,7 +44,7 @@ function Navbar() {
       <div onClick={() => navigate('/')} className='cursor-pointer flex items-center gap-2'>
         <img src="/favicon.png" alt="logo" className='h-14 lg:h-15 cursor-pointer' />
         <div className='hidden sm:block'>
-          <h1 className= 'text-[3rem] text-green-700 font-bold'>NovaLMS</h1>
+          <h1 className= 'text-[3rem] text-green-700 font-bold'>CourseForge</h1>
         </div>
       </div>
       <div className='hidden md:flex items-center gap-5 text-gray-500'>
