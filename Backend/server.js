@@ -30,6 +30,10 @@ app.post('/stripe', express.raw({
 
 const PORT = process.env.PORT || 5090
 
-app.listen(PORT, () => {
-    console.log(`server is running on port ${PORT} successfully`)
-})
+if (!process.env.VERCEL) {
+    app.listen(PORT, () => {
+        console.log(`server is running on port ${PORT} successfully`)
+    })
+}
+
+export default app
